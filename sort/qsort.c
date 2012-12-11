@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 int parttion(char *s,int len)
 {
@@ -38,6 +39,9 @@ int parttion(char *s,int len)
 int quicksort(char *s,int len)
 {
 	int i,j;
+	if(s == NULL){
+		return -1;
+	}
 	if(len == 1){
 		return 0;
 	}
@@ -49,10 +53,16 @@ int quicksort(char *s,int len)
 }
 int main()
 {
-	char a[4] = {2,4,3,5};
-	quicksort(a,4);
+	char a[10] = {2,4,3,5};
 	int i;
-	for(i=0;i<4;i++)
+
+	srand((unsigned )time(NULL));
+	for(i=0;i<10;i++){
+		a[i] = random()%100;
+	}
+	quicksort(a,sizeof(a)/sizeof(char));
+	for(i=0;i<sizeof(a);i++)
 		printf("%4d",a[i]);
+	putchar('\n');
 	return 0;
 }
