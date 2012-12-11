@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DeQueue	queue.c	/^int DeQueue(SqQueue *Q,int *e)$/;"	f
+EnQueue	queue.c	/^int EnQueue(SqQueue *Q,int e)$/;"	f
+InitQueue	queue.c	/^int InitQueue(SqQueue *Q)$/;"	f
+LinkQueue	link_queue.c	/^}LinkQueue;$/;"	t	typeref:struct:__anon1	file:
+MAXSIZE	queue.c	4;"	d	file:
+QElemType	link_queue.c	/^typedef int QElemType;$/;"	t	file:
+QNode	link_queue.c	/^typedef struct QNode{$/;"	s	file:
+QNode	link_queue.c	/^}QNode,*QueuePtr;$/;"	t	typeref:struct:QNode	file:
+QueueLength	queue.c	/^int QueueLength(SqQueue Q)$/;"	f
+QueuePtr	link_queue.c	/^}QNode,*QueuePtr;$/;"	t	typeref:struct:QNode	file:
+SqQueue	queue.c	/^}SqQueue;$/;"	t	typeref:struct:__anon2	file:
+data	link_queue.c	/^	QElemType  data;$/;"	m	struct:QNode	file:
+data	queue.c	/^	int data[MAXSIZE];\/*数据类型，其中int可以根据需要进行修改*\/$/;"	m	struct:__anon2	file:
+front	link_queue.c	/^	QueuePtr front,rear;$/;"	m	struct:__anon1	file:
+front	queue.c	/^	int front; 		\/*队列头指针*\/$/;"	m	struct:__anon2	file:
+main	queue.c	/^int main(void)$/;"	f
+next	link_queue.c	/^	struct QNode  *next;$/;"	m	struct:QNode	typeref:struct:QNode::QNode	file:
+rear	link_queue.c	/^	QueuePtr front,rear;$/;"	m	struct:__anon1	file:
+rear	queue.c	/^	int rear; 		\/*队列尾指针*\/$/;"	m	struct:__anon2	file:
